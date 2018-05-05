@@ -1,0 +1,292 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>3 Specific Needs &mdash; SRS [0.1] documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> SRS
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">3 Specific Needs</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">SRS</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>3 Specific Needs</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/3.Specific Needs.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <hr class="docutils" />
+<div class="toctree-wrapper compound">
+</div>
+<div class="section" id="specific-needs">
+<h1>3 Specific Needs<a class="headerlink" href="#specific-needs" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><strong>3.1 Functional Requirements</strong></li>
+</ul>
+<blockquote>
+<div><ul class="simple">
+<li><em>3.1.1 user registration and login</em></li>
+</ul>
+</div></blockquote>
+<p>The system has only one user role: scientists. The role needs to have a login function. Registered users can upload gene expression files after logging in.</p>
+<p>The user enters the total function interface by entering the account password and clicking login.</p>
+<blockquote>
+<div><ul class="simple">
+<li><em>3.1.2 gene file upload</em></li>
+</ul>
+</div></blockquote>
+<p>Users click “Upload” to upload the genetic files that need to be analyzed. The software automatically determines whether a gene file is an valid gene file. If it is valid, the application will feedback tables and scatter plots after analyzing the data. If an invalid gene file is displayed, a dialog box with “invalid gene file” is displayed.</p>
+<p>The format of the valid gene expression file is as follows:
+It is a TAB-delimited, plain text file with three columns (see the attached file for a full example).  The file contains an optional head line, followed by each gene’s expression in a control sample (e.g., ControlSample) and in a treatment sample (e.g., KnockOutSample).</p>
+<blockquote>
+<div><ul class="simple">
+<li><em>3.1.3 View, export and delete of historical records</em></li>
+</ul>
+</div></blockquote>
+<p>Users click on “History” to view historical uploaded gene files and software feed back analysis forms and scatter plots.
+After selecting a record, click the “Export” button to export the gene expression file, analysis form and scatter diagram of the record.
+When you select a record, click the “Delete” button to delete the record .After deleting, it can not be recovered.</p>
+<blockquote>
+<div><ul class="simple">
+<li><em>3.1.4 personal information management</em></li>
+</ul>
+</div></blockquote>
+<p>Users click on the “personal information management” on the left side of the function bar to view and modify personal information. Personal information includes user name (login account), nickname and password. After entering the personal information management page, click modify information. After the original password is verified, the nicknames and passwords can be modified. After modifying and clicking save changes, this modification of personal information will take effect.
+* <strong>3.2 External Interface Needs</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><em>3.2.1 user interface</em></li>
+</ul>
+</div></blockquote>
+<p>There is no special demand.</p>
+<blockquote>
+<div><ul class="simple">
+<li><em>3.2.2 hardware interface</em></li>
+</ul>
+</div></blockquote>
+<p>There is no special demand.</p>
+<blockquote>
+<div><ul class="simple">
+<li><em>3.2.3 software interface</em></li>
+</ul>
+</div></blockquote>
+<p>There is no special demand.</p>
+<blockquote>
+<div><ul class="simple">
+<li><em>3.2.4 communication interface</em></li>
+</ul>
+</div></blockquote>
+<p>There is no special demand.</p>
+<ul class="simple">
+<li><strong>3.3 Performance Requirements</strong></li>
+</ul>
+<p>The response time of feedback analysis tables and scatter plots is less than 5 seconds.</p>
+<ul class="simple">
+<li><strong>3.4 Attributes</strong></li>
+</ul>
+<blockquote>
+<div><ul class="simple">
+<li><em>3.4.1 availability</em></li>
+</ul>
+</div></blockquote>
+<p>(1) Convenient operation,.
+The operation process is simple and easy to understand.</p>
+<dl class="docutils">
+<dt>(2)Control the item which is required.</dt>
+<dd>This software can control the items that must be input, ensure the integrity of information input. If users modify personal information, personal nicknames and user passwords must not be empty.</dd>
+</dl>
+<p>(3)Correctness.
+Ensuring the correctness of data processing. This software first needs to discriminate the input gene files and determine the effective gene files to process and analyze the data.</p>
+<p>(4)There is uniform and standard prompt information when the operation is completed.
+For example, when the delete operation, the system can display the warning box. “Do you confirm the deletion of the record? After deleting, it will not be restored.”After the user clicks the “confirmation”, the system will perform the delete operation and return to the relevant pages directly.</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Aimee.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'[0.1]',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
